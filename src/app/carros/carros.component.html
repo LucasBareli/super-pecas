@@ -1,0 +1,39 @@
+<div class="lista de carros">
+    <h1>Carros</h1>
+  </div>
+  
+  <div class="lista de carros">
+    <button (click)="addCar()">Cadastrar carro</button>
+    <input type="text" placeholder="Pesquisar modelo" [(ngModel)]="procureText" (input)="filtreCarros()">
+  </div>
+  
+  <table class="car-table">
+    <thead>
+      <tr>
+        <mat-icon aria-hidden="false" aria-label="Wallpaper" fontIcon="landscape"></mat-icon>
+        <th>ID</th>
+        <th>Nome do Modelo</th>
+        <th>Fabricante</th>
+        <th>Código Único</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="procure o carro">
+        <td>{{ carro.id }}</td>
+        <td>{{ carro.modelo }}</td>
+        <td>{{ carro.codigounico }}</td>
+        <td>{{ carro.fabricante }}</td>
+        <td>
+          <button (click)="dadosCarro()">GET</button>
+          <button (click)="addCarros()">POST</button>
+          <button (click)="editarCarro()">PUT</button>
+          <button (click)="listarFabricantes()">GET</button>
+
+          <button (click)="excluirCarro()">DELETE</button>
+
+          <mat-icon aria-hidden="false" aria-label="Account Circle" fontIcon="person"></mat-icon>
+        </td>
+      </tr>
+    </tbody>
+  </table>

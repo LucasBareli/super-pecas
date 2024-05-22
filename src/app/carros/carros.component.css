@@ -1,0 +1,158 @@
+.container { /* Container principal */
+    display: flex; /* Layout flex para alinhar sidebar e main-content lado a lado */
+    height: 100vh; /* Altura total da tela */
+  }
+  
+  
+  .sidebar {
+    width: 250px; /* Largura da sidebar */
+    background-color: #f4f4f4; /* Cor de fundo da sidebar */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra na borda direita */
+  }
+  
+ 
+  .user-info {    /* Informação do usuário */
+    text-align: center; /* Centraliza  */
+    margin-bottom: 20px; /* Espaçamento inferior */
+  }
+  
+ 
+  .user-info img {   /* Avatar do usuário */
+    width: 100px; /* Largura da imagem */
+    height: 100px; /* Altura da imagem */
+    border-radius: 50%; /* Borda arredondada para avatar circular */
+    margin-bottom: 10px; /* Espaçamento inferior */
+  }
+  
+  
+  .user-info p { /* Nome do usuário */
+    margin: 0; /* Remove margem padrão */
+  }
+  
+  
+  .nav-menu ul {    /* Menu de navegação */
+    list-style: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove padding */
+  }
+  
+  
+  .nav-menu li {  /* Itens do menu */
+    margin-bottom: 10px; /* Espaçamento inferior */
+  }
+  
+  
+  .nav-menu a {    /* Links do menu */
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: #333; /* Cor do texto */
+    display: block; /* Faz o link ocupar a largura total do item */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 4px; /* Borda arredondada */
+  }
+  
+
+  .nav-menu a.active {    /* Link ativo */
+    background-color: #007bff; /* Cor de fundo do link ativo */
+    color: #fff; /* Cor do texto do link ativo */
+  }
+  
+  
+  .main-content {    /* Conteúdo principal */
+    flex: 1; /* Ocupa o espaço restante */
+    padding: 20px; /* Espaçamento interno */
+  }
+  
+  
+  .page-header {   /* Cabeçalho da página */
+    display: flex; /* Layout flex para alinhar título e imagem lado a lado */
+    justify-content: space-between; /* Espaço entre os itens */
+    align-items: center; /* Alinha os itens ao centro */
+    margin-bottom: 20px; /* Espaçamento inferior */
+  }
+  
+
+  .page-header h1 {   /* Título da página */
+    margin: 0; /* Remove margem padrão */
+  }
+  
+
+  .page-header img {     /* Imagem do banner */
+    width: 150px; /* Largura da imagem */
+    height: auto; /* Altura automática para manter a proporção */
+  }
+  
+ 
+  .actions {    /* Ações (botão e pesquisa) */
+    display: flex; /* Layout flex para alinhar botão e campo de pesquisa lado a lado */
+    justify-content: space-between; /* Espaço entre os itens */
+    margin-bottom: 20px; /* Espaçamento inferior */
+  }
+  
+ 
+  .actions button {   /* Botão de cadastrar carro */
+    padding: 10px 20px; /* Espaçamento interno */
+    background-color: #007bff; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove borda */
+    border-radius: 4px; /* Borda arredondada */
+    cursor: pointer; /* Cursor de ponteiro */
+  }
+  
+
+  .actions input {   /* Campo de pesquisa */
+    padding: 10px; /* Espaçamento interno */
+    width: 200px; /* Largura do campo */
+    border: 1px solid #ddd; /* Borda */
+    border-radius: 4px; /* Borda arredondada */
+  }
+  
+
+  .car-table {    /* Tabela de carros */
+    width: 100%; /* Largura total */
+    border-collapse: collapse; /* Colapsa bordas */
+  }
+  
+  
+  .car-table th, .car-table td {  /* Cabeçalho da tabela */
+    border: 1px solid #ddd; /* Borda */
+    padding: 8px; /* Espaçamento interno */
+    text-align: left; /* Alinhamento do texto à esquerda */
+  }
+  
+  
+  .car-table th {  /* Cabeçalho da tabela */
+    background-color: #f2f2f2; /* Cor de fundo */
+  }
+  
+  
+  .pagination {   /* Paginação */
+    display: flex; /* Layout flex para alinhar itens lado a lado */
+    justify-content: center; /* Centraliza os itens */
+    margin-top: 20px; /* Espaçamento superior */
+  }
+  
+  
+  .pagination button {  /* Botões de paginação */
+    padding: 10px 20px; /* Espaçamento interno */
+    margin: 0 5px; /* Margem horizontal */
+    background-color: #007bff; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove borda */
+    border-radius: 4px; /* Borda arredondada */
+    cursor: pointer; /* Cursor de ponteiro */
+  }
+  
+ 
+  .pagination span {   /* Númeração da página */
+    padding: 10px 15px; /* Espaçamento interno */
+    margin: 0 5px; /* Margem horizontal */
+    cursor: pointer; /* Cursor de ponteiro */
+  }
+  
+ 
+  .pagination span.active {   /* Página ativa */
+    background-color: #007bff; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border-radius: 4px; /* Borda arredondada */
+  }
+  

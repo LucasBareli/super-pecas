@@ -1,0 +1,46 @@
+<div class="pecas-container">
+    <div class="header">
+      <h1>Listagem de peças</h1>
+    </div>
+    
+    <div class="Ações">
+      <button class="botaoCadastrar">Cadastrar peça</button>
+      <input type="text" placeholder="Pesquisar" class="search-box" [(ngModel)]="searchTerm" (input)="onSearch()">
+    </div>
+    
+    <table class="pecas-table">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Nome</th>
+          <th>Descrição</th>
+          <th>Número de Série</th>
+          <th>Fabricante</th>
+          <th>Carro/Fabricante</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="procure a peca">
+          <td>{{ peca.id }}</td>
+          <td>{{ peca.nome }}</td>
+          <td>{{ peca.descricao }}</td>
+          <td>{{ peca.numeroSerie }}</td>
+          <td>{{ peca.fabricante }}</td>
+          <td>{{ peca.carroFabricante }}</td>
+          <td>
+            <button (click)="editPeca(peca)">Editar</button>
+            <button (click)="deletePeca(peca)">Remover</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <div class="paginas">
+      Exibindo {{ currentPage }} até {{ currentPage * pageSize }} de {{ totalPecas }} registros.
+      <span *ngFor="pagAtual" (click)="pagNova(page)" [class.active]="pag === currentPag">
+        {{ page }}
+      </span>
+    </div>
+  </div>
+  
